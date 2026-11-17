@@ -33,14 +33,14 @@ def init_database():
 # Initial database if empty
 initial_activities = {
     "Manga Maniacs": {
-        "description": "Explore the fantastic stories of the most interesting characters from Japanese Manga (graphic novels)",
-        "schedule": "Tuesdays, 7:00 PM - 8:00 PM",
+        "description": "Dive into the wild worlds of Japanese manga! Meet unforgettable heroes, rivals and legends, swap your favorite series, and join fellow otaku for epic story talk",
+        "schedule": "Tuesdays, 5:00 PM - 6:00 PM",
         "schedule_details": {
             "days": ["Tuesday"],
-            "start_time": "19:00",
-            "end_time": "20:00"
+            "start_time": "17:00",
+            "end_time": "18:00"
         },
-        "max_participants": 15,
+        "max_participants": 25,
         "participants": []
     },
     "Chess Club": {
@@ -64,17 +64,6 @@ initial_activities = {
         },
         "max_participants": 20,
         "participants": ["emma@mergington.edu", "sophia@mergington.edu"]
-    },
-    "Manga Maniacs": {
-        "description": "Explore the fantastic stories of the most interesting characters from Japanese Manga (graphic novels)",
-        "schedule": "Tuesdays, 7:00 PM - 8:00 PM",
-        "schedule_details": {
-            "days": ["Tuesday"],
-            "start_time": "19:00",
-            "end_time": "20:00"
-        },
-        "max_participants": 15,
-        "participants": []
     },
     "Morning Fitness": {
         "description": "Early morning physical training and exercises",
