@@ -33,7 +33,7 @@ def init_database():
 # Initial database if empty
 initial_activities = {
     "Manga Maniacs": {
-        "description": "Dive into the wild worlds of Japanese manga! Meet unforgettable heroes, rivals and legends, swap your favorite series, and join fellow otaku for epic story talk",
+        "description": "Believe it! Power up your Tuesdays with a crew of fellow manga fanatics! Dive into shonen showdowns, heart-pounding shojo romances and legendary sagas, debate your favorite heroes and rivals, swap volumes, and go beyond your limits as an otaku. Plus ultra storytelling awaits, so join the nakama!",
         "schedule": "Tuesdays, 5:00 PM - 6:00 PM",
         "schedule_details": {
             "days": ["Tuesday"],
