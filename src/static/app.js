@@ -526,6 +526,11 @@ document.addEventListener("DOMContentLoaded", () => {
       </div>
     `;
 
+    const shareUrl = encodeURIComponent(window.location.href.split("#")[0]);
+    const shareText = encodeURIComponent(
+      `Check out ${name} at Mergington High School: ${details.description}`
+    );
+
     activityCard.innerHTML = `
       ${tagHtml}
       <h4>${name}</h4>
@@ -558,6 +563,12 @@ document.addEventListener("DOMContentLoaded", () => {
             )
             .join("")}
         </ul>
+      </div>
+      <div class="share-buttons">
+        <span class="share-label">Share:</span>
+        <a class="share-button" data-network="facebook" target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/sharer/sharer.php?u=${shareUrl}&quote=${shareText}">Facebook</a>
+        <a class="share-button" data-network="x" target="_blank" rel="noopener noreferrer" href="https://twitter.com/intent/tweet?url=${shareUrl}&text=${shareText}">X</a>
+        <a class="share-button" data-network="email" href="mailto:?subject=${shareText}&body=${shareText}%20${shareUrl}">Email</a>
       </div>
       <div class="activity-card-actions">
         ${
